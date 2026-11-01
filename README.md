@@ -47,21 +47,27 @@ sjn-edf-scheduling/
 ├── requirements.txt      # Project dependencies
 ├── README.md             # Project documentation
 └── LICENSE               # MIT License
-🚀 Quick Start & Installation
+
+---
+
+## 🚀 Quick Start & Installation
 Prerequisites
 Python 3.11 or higher
 Git
-Installation & Execution
+
+## Installation & Execution
 Clone the repository:
 Bash
 git clone [https://github.com/agulerislander/sjn-edf-scheduling.git](https://github.com/agulerislander/sjn-edf-scheduling.git)
 cd sjn-edf-scheduling
+
 Install dependencies:
 Bash
 pip install -r requirements.txt
 Run the Monte Carlo benchmark suite:
 Bash
 python benchmark.py
+
 Generate visualization charts:
 Bash
 python plotter.py
