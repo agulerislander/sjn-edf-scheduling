@@ -57,6 +57,7 @@ Git
 
 ## Installation & Execution
 Clone the repository:
+
 Bash
 git clone [https://github.com/agulerislander/sjn-edf-scheduling.git](https://github.com/agulerislander/sjn-edf-scheduling.git)
 cd sjn-edf-scheduling
@@ -64,7 +65,9 @@ cd sjn-edf-scheduling
 ## Install dependencies:
 Bash
 pip install -r requirements.txt
+
 Run the Monte Carlo benchmark suite:
+
 Bash
 python benchmark.py
 
