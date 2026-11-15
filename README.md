@@ -76,7 +76,7 @@ Bash
 python plotter.py
 
 ## 👥 Authors & Academic Attribution
-Alihan Güler – Department of Computer Science, Texas A&M University–Corpus Christi
+Alihan Guler – Department of Computer Science, Texas A&M University–Corpus Christi
 Siddhartha Rao Sandineni – Department of Computer Science, Texas A&M University–Corpus Christi
 Zhiwen Zhong – Department of Computer Science, Texas A&M University–Corpus Christi
 Course: COSC 6352: Advanced Operating Systems
