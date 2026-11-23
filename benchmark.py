@@ -20,6 +20,7 @@ if __name__ == "__main__":
     for U in utilization_levels:
         sjn_dmr_list, edf_dmr_list, hyb_dmr_list = [], [], []
         sjn_awt_list, edf_awt_list, hyb_awt_list = [], [], []
+        sjn_csf, edf_csf, hyb_csf = 0, 0, 0
 
         for _ in range(NUM_RUNS):
             tasks = generate_uunifast_workload(num_tasks=20, total_utilization=U)
@@ -36,6 +37,10 @@ if __name__ == "__main__":
             edf_awt_list.append(res_edf['AWT'])
             hyb_awt_list.append(res_hyb['AWT'])
 
+            sjn_csf = res_sjn['CSF']
+            edf_csf = res_edf['CSF']
+            hyb_csf = res_hyb['CSF']
+
         avg_sjn_dmr = sum(sjn_dmr_list) / NUM_RUNS
         avg_edf_dmr = sum(edf_dmr_list) / NUM_RUNS
         avg_hyb_dmr = sum(hyb_dmr_list) / NUM_RUNS
@@ -47,4 +52,6 @@ if __name__ == "__main__":
         load_label = f"{int(U*100)}%"
         print(f"{load_label:<10} | DMR %  | {avg_sjn_dmr:<12.2f} | {avg_edf_dmr:<12.2f} | {avg_hyb_dmr:<15.2f}")
         print(f"{'':<10} | AWT ms | {avg_sjn_awt:<12.2f} | {avg_edf_awt:<12.2f} | {avg_hyb_awt:<15.2f}")
+        # print(f"Frequency SJN: {sjn_csf:<12.2f}    EDF: {edf_csf:<12.2f}    HYB: {hyb_csf:<12.2f}")
         print("-" * 80)
+    print(f"")
